@@ -28,8 +28,13 @@ function compareNumbers(selector, computerNumber) {
       } else if ((i = 3)) {
         alert("you lose");
       }
+    } else if (isNaN(selector) || selector < 0 || selector >= 10) {
+      selector = prompt(
+        "that is not a number or it is not between 1 and 10, guess an number between 0 and 10"
+      );
     } else if ((computerNumber = selector)) {
       alert("winner!");
+      i = 3;
     }
   }
 }
